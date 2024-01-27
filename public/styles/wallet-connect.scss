@@ -1,0 +1,102 @@
+div#walletconnect-wrapper {
+    #walletconnect-qrcode-modal {
+        background: rgba(0, 0, 0, 0.6);
+
+        // Style for modal content wrapper
+        .walletconnect-modal__base {
+            width: 548px;
+            height: 542px;
+            background: #12094A;
+            padding: 24px 32px 22px;
+        }
+
+        // Style for modal header wrapper
+
+        .walletconnect-modal__base .walletconnect-modal__header {
+            height: 64px;
+            border-radius: 24px 24px 0px 0px;
+            background: rgb(32, 21, 102);
+            box-shadow: 0px 2px 4px rgba(75, 75, 75, 0.08);
+        }
+
+
+        // Style for header title
+        .walletconnect-modal__base .walletconnect-modal__header .walletconnect-modal__headerLogo {
+            display: none;
+        }
+
+        .walletconnect-modal__base .walletconnect-modal__header p {
+            visibility: hidden;
+        }
+
+        .walletconnect-modal__base .walletconnect-modal__header p::after {
+            display: block;
+            position: absolute;
+            visibility: visible;
+            content: 'Wallet Connect';
+            font-family: 'Russo One';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 32px;
+            left: 32px;
+        }
+
+        // Style for close button
+        .walletconnect-modal__base .walletconnect-modal__header .walletconnect-modal__close__wrapper {
+            top: 20px;
+            right: 24px;
+            width: 32px;
+            height: 32px;
+            background: rgba(255, 255, 255, 0.16);
+            border-radius: 24px;
+        }
+
+        // Style for close icon line
+        .walletconnect-modal__base .walletconnect-modal__header .walletconnect-modal__close__wrapper .walletconnect-modal__close__icon {
+            top: 10px;
+        }
+
+        .walletconnect-modal__base .walletconnect-modal__header .walletconnect-modal__close__wrapper .walletconnect-modal__close__icon .walletconnect-modal__close__line2 {
+            border: 2px solid #fff;
+            border-radius: 4px !important;
+        }
+
+        .walletconnect-modal__base .walletconnect-modal__header .walletconnect-modal__close__wrapper .walletconnect-modal__close__icon .walletconnect-modal__close__line1 {
+            border: 2px solid #fff;
+            border-radius: 4px !important;
+        }
+
+        // Style for modal connect options
+        .walletconnect-modal__base .walletconnect-modal__mobile__toggle {
+            display: none
+        }
+
+        // Style for QR code wrapper
+        .walletconnect-modal__base div div {
+            border-radius: 6px;
+            background: #ffffff;
+
+        }
+
+        // Style for QR code text
+        .walletconnect-modal__base div div #walletconnect-qrcode-text {
+            color: #747C89;
+            font-weight: 500;
+            padding-top: 16px;
+            font-family: "Rubik";
+            margin: 24px 0 12px 0;
+        }
+
+        // Style for QR code
+        .walletconnect-modal__base div div div svg {
+            padding: 0px 8px 18px;
+        }
+
+        // Style for modal footer
+        .walletconnect-modal__footer {
+            display: none
+        }
+
+    }
+}

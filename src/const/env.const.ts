@@ -1,0 +1,17 @@
+export const IS_PRODUCT = process.env.NODE_ENV === "production";
+export const IS_DEV = process.env.NODE_ENV !== "production";
+export const BASE_SERVICE_URL = process.env.BASE_SERVICE_URL;
+
+export const POLYGON_CONTRACT_ADDRESS = {
+  ADDRESS_NFT_CARD_MARKETPLACE: process.env.ADDRESS_NFT_CARD_MARKETPLACE || "",
+  ADDRESS_NFT_CARD: process.env.ADDRESS_NFT_CARD || "",
+  ADDRESS_NFT_BOX: process.env.ADDRESS_NFT_BOX,
+  ADDRESS_NFT_EMOTE: process.env.ADDRESS_NFT_EMOTE,
+  ADDRESS_NFT_TOWER_SKIN: process.env.ADDRESS_NFT_TOWER_SKIN,
+  ADDRESS_TOY_TOKEN: process.env.ADDRESS_TOY_TOKEN || "",
+  ADDRESS_STAKING_CARD: process.env.ADDRESS_STAKING_CARD || "",
+  ADDRESS_STAKING_BOX: process.env.ADDRESS_STAKING_BOX || "",
+  ADDRESS_STAKING_EMOTE: process.env.ADDRESS_STAKING_EMOTE || "",
+  ADDRESS_STAKING_TOWER_SKIN: process.env.ADDRESS_STAKING_TOWER_SKIN || "",
+  ADDRESS_MINT_CARD: process.env.ADDRESS_MINT_CARD || "",
+};

@@ -1,0 +1,92 @@
+html,
+body {
+  scroll-behavior: smooth;
+  background-color: #09080c;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+  overflow-y: auto;
+}
+
+#__next {
+  // Root element
+  width: 100%;
+  height: 100%;
+  overflow: hidden scroll;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+    display: flex;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 4px;
+  }
+}
+
+.center-root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-vertical-root {
+  display: flex;
+  align-items: center;
+}
+
+.space-between-root {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.eclipse {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; // default 1 line
+  -webkit-box-orient: vertical;
+}
+
+// Hidden arrow of number input
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.custom-scrollbar {
+  &::-webkit-scrollbar {
+    width: 5px;
+    display: flex;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #1c2743;
+    border-radius: 4px;
+    border: 0.2px solid #8c8c8c;
+  }
+}
